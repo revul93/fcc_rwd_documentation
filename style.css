@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#head-tag {
+    text-align: center;
+    padding: 2vh;
+    font-size: 1.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: royalblue;
+    color: yellow;
+}
+
+.divider {
+    height: 2vh;
+    background-color: black;
+    margin-top: 0;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    flex-wrap: nowrap;
+}
+
+#nav-panel {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+nav header {
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1vh;
+}
+
+nav .divider {
+    height: 5px;
+}
+
+nav ul li {
+    padding: 1vh;
+    background-color: lightgrey;
+    border-top: 1px solid grey;
+    display: flex;
+}
+
+nav ul li:hover {
+    background-color: white;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    height: 100%;
+}
+
+#to-top {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    width: 200px;
+    z-index: 15;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: royalblue;
+    color: yellow;
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+#to-top:hover {
+    background-color: yellow;
+    color: royalblue;
+}
+
+main {
+    padding: 2vw;
+    padding-bottom: 9vw;
+    border-left: 2px solid black;
+}
+
+section {
+    margin-bottom: 6vw;
+}
+
+section header {
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+section article {
+    padding-left: 15px;
+}
+
+section article h3 ~ p, section article h3 ~ ul, section article h3 ~ ol, section article h3 ~ code {
+    padding-top: 15px;
+    padding-left: 30px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+}
+
+code {
+    background-color: black;
+    color: yellow;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 15px;
+    padding: 25px;
+    display: block;
+    border-radius: 10px;
+}
+
+.error-code {
+    color: red;
+}
+
+@media screen and (max-width:650px) {
+    #head-tag {
+        font-size: 1.2rem;
+    }
+
+    #container {
+        flex-direction: column;
+    }
+
+    #nav-panel {
+        width: 100%;
+        height: 350px;
+        min-height: 200px;
+        max-width: unset;
+        border-left: unset;
+        border-bottom: 2px solid black;
+    }
+}

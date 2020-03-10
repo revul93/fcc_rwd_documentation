@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <title>Python Minimal Documentation</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Python Minimal Documentation">
+        <meta name="keywords" content="Python, Documentation, Programming">
+        <meta name="author" content="revul93">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1 id="head-tag">Python Minimal Documentation</h1>
+        <div class="divider"></div>
+        <div id="container">
+            <div id="nav-panel">
+                <nav id="navbar">
+                    <header>Table of Contnets</header>
+                    <div class="divider"></div>
+                    <ul>
+                        <li><a href="#introduction" class="nav-link">Introduction</a></li>
+                        <li><a href="#hello_world" class="nav-link">Hello World</a></li>
+                        <li><a href="#syntax_and_indentation" class="nav-link">Syntax and Indentation</a></li>
+                        <li><a href="#variables" class="nav-link">Variables</a></li>
+                        <li><a href="#operators" class="nav-link">Operators</a></li>
+                        <li><a href="#controls" class="nav-link">Controls</a></li>
+                        <li><a href="#loops" class="nav-link">Loops</a></li>
+                        <li><a href="#classes_and_objects" class="nav-link">Classes and Objects</a></li>
+                    </ul>
+                    <ul>
+                        <li id="to-top"><a href="#head-tag">Back to Top</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <main id="main-doc">
+                <section id="introduction" class="main-section">
+                    <header>Introduction</header>
+                    <article>
+                        <h3>What is Python?</h3>
+                        <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</p>
+                    
+                        <h3>It is used for:</h3>
+                        <ul>
+                            <li>web development (server-side)</li>
+                            <li>software development</li>
+                            <li>mathematics</li>
+                            <li>system scripting</li>
+                        </ul>
+        
+                        <h3>What can Python do?</h3>
+                        <ul>
+                            <li>Python can be used on a server to create web applications.</li>
+                            <li>Python can be used alongside software to create workflows.</li>
+                            <li>Python can connect to database systems. It can also read and modify files.</li>
+                            <li>Python can be used to handle big data and perform complex mathematics.</li>
+                            <li>Python can be used for rapid prototyping, or for production-ready software development.</li>
+                        </ul>
+        
+                        <h3>Why Python?</h3>
+                        <ul>
+                            <li>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).</li>
+                            <li>Python has a simple syntax similar to the English language.</li>
+                            <li>Python has syntax that allows developers to write programs with fewer lines than some other programming languages.</li>
+                            <li>Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick.</li>
+                            <li>Python can be treated in a procedural way, an object-orientated way or a functional way.</li>
+                        </ul>
+        
+                        <h3>Good to know</h3>
+                        <ul>
+                            <li>The most recent major version of Python is Python 3, which we shall be using in this tutorial. However, Python 2, although not being updated with anything other than security updates, is still quite popular.</li>
+                            <li>In this tutorial Python will be written in a text editor. It is possible to write Python in an Integrated Development Environment, such as Thonny, Pycharm, Netbeans or Eclipse which are particularly useful when managing larger collections of Python files.</li>
+                            <li>Python Syntax compared to other programming languages</li>
+                            <li>Python was designed for readability, and has some similarities to the English language with influence from mathematics.</li>
+                            <li>Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses.</li>
+                            <li>Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose.</li>
+                        </ul>
+                    </article>
+                </section>
+
+                <section id="hello_world" class="main-section">
+                    <header>Hello World</header>
+                    <article>
+                        <p>
+                            Python is a very simple language, and has a very straightforward syntax. It encourages programmers to program without boilerplate (prepared) code.
+                            The simplest directive in Python is the "print" directive - it simply prints out a line (and also includes a newline, unlike in C).
+                        </p><br />
+                        <p>
+                            To print a string in Python 3, just write:
+                        </p>
+                        <code>
+                            print("Hello, World!")
+                        </code>
+                    </article>
+                </section>
+                
+                <section id="syntax_and_indentation" class="main-section">
+                    <header>Syntax and Indentation</header>
+                    <article>
+                        <h3>Python Indentation</h3>
+                        <p>Indentation refers to the spaces at the beginning of a code line.</p>
+                        <p>Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.</p>
+                        <p>Python uses indentation to indicate a block of code</p>
+                        <code>
+<pre>if 5 > 2:
+    print("Five is greater than two!")</pre>
+                        </code>
+                        <p>Python will give you an error if you skip the indentation:</p>
+                        <code>
+                            if 5 > 2:<br/>
+                            print("Five is greater than two!")<br /><br />
+                            <span class="error-code">SyntaxError: expected an indented block</span>
+                        </code>
+                    </article>
+                </section>
+
+                <section id="variables" class="main-section">
+                    <header>Variables</header>
+                    <article>
+                        <h3>What is a Variable in Python?</h3>
+                        <p>
+                            A Python variable is a reserved memory location to store values.
+                            In other words, a variable in a python program gives data to the computer for processing.
+                        </p>
+                        <p>
+                            Every value in Python has a datatype.
+                            Different data types in Python are Numbers, List, Tuple, Strings, Dictionary, etc.
+                            Variables can be declared by any name or even alphabets like a, aa, abc, etc.
+                        </p>
+
+                        <h3>How to Declare and use a Variable</h3>
+                        <p>
+                            Declare variables is as easy as to write it is name followed by assignment operator
+                            followed by it's value.<br />
+                            You can re-declare the variable even after you have declared it once.
+                        </p>
+                        <code>
+                            # Declare a variable and initialize it<br />
+                            f = 0<br />
+                            print(f)<br />
+                            # re-declaring the variable works<br />
+                            f = 'guru99'<br />
+                            print(f)<br />
+                        </code>
+
+                        <h3>Local & Global Variables</h3>
+                        <p>
+                            In Python when you want to use the same variable for rest of your program or module you declare it a global variable, while if you want to use the variable in a specific function or method, you use a local variable.
+                            <br />
+                            Let's understand this difference between local and global variable with the below program.
+                            <ol>
+                                <li>Variable "f" is global in scope and is assigned value 101 which is printed in output</li>
+                                <li>Variable f is again declared in function and assumes local scope. It is assigned value "I am learning Python." which is printed out as an output. This variable is different from the global variable "f" define earlier</li>
+                                <li>Once the function call is over, the local variable f is destroyed. At line 12, when we again, print the value of "f" is it displays the value of global variable f=101</li>
+                            </ol>
+
+                            <p>
+                                Using the keyword global, you can reference the global variable inside a function.
+                            </p>
+                            <ol>
+                                <li>Variable "f" is global in scope and is assigned value 101 which is printed in output</li>
+                                <li>Variable f is declared using the keyword global. This is NOT a local variable, but the same global variable declared earlier. Hence when we print its value, the output is 101</li>
+                                <li>We changed the value of "f" inside the function. Once the function call is over, the changed value of the variable "f" persists. At line 12, when we again, print the value of "f" is it displays the value "changing global variable"</li>
+                            </ol>
+                        </p>
+                    </article>
+                </section>
+
+                <h1 style="text-align: center; font-weight: bold; color: red">To be continued!</h1>
+
+                <section id="operators" class="main-section">
+                    <header>Operators</header>
+                    <article>
+                        <h3></h3>
+                        <p></p>
+                        <code></code>
+                    </article>
+                </section>
+
+                <section id="controls" class="main-section">
+                    <header>Controls</header>
+                    <article>
+                        <h3></h3>
+                        <p></p>
+                    </article>
+                </section>
+
+                <section id="loops" class="main-section">
+                    <header>Loops</header>
+                    <article>
+                        <h3></h3>
+                        <p></p>
+                    </article>
+                </section>
+
+                <section id="classes_and_objects" class="main-section">
+                    <header>Classes and Objects</header>
+                    <article>
+                        <h3></h3>
+                        <p></p>
+                    </article>
+                </section>
+            </main>
+        </div>
+
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+        </script>
+    </body>
+</html>
